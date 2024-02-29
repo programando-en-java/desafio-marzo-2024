@@ -23,23 +23,81 @@ usuarios realizar, actualizar, cancelar y buscar reservas.
 
 ## Requisitos Funcionales
 
+A continuación, se detallan las tareas específicas para cada requisito funcional, utilizando la nomenclatura GIVEN-WHEN-THEN para clarificar las expectativas.
+
+
 ### Gestión de Habitaciones
 
-- Registrar nuevas habitaciones con detalles como identificador, tipo y precio.
-- Listar todas las habitaciones disponibles.
-- Actualizar los detalles de las habitaciones.
+#### Tarea 1: Registrar Nuevas Habitaciones
+
+Registrar nuevas habitaciones con detalles como identificador, tipo y precio.
+
+- **GIVEN** un administrador desea agregar una nueva habitación al sistema
+- **WHEN** el administrador envía los detalles de la habitación (identificador, tipo, precio)
+- **THEN** el sistema registra la nueva habitación y devuelve un mensaje de éxito.
+
+#### Tarea 2: Listar Todas las Habitaciones Disponibles
+
+Listar todas las habitaciones disponibles.
+
+- **GIVEN** un usuario desea ver todas las habitaciones disponibles
+- **WHEN** el usuario solicita la lista de habitaciones disponibles
+- **THEN** el sistema devuelve una lista de todas las habitaciones disponibles.
+
+#### Tarea 3: Actualizar Detalles de las Habitaciones
+
+Actualizar los detalles de las habitaciones.
+
+- **GIVEN** un administrador desea actualizar los detalles de una habitación existente
+- **WHEN** el administrador envía los nuevos detalles de la habitación (tipo, precio)
+- **THEN** el sistema actualiza los detalles de la habitación y devuelve un mensaje de confirmación.
+
 
 ### Reservas
 
-- Permitir a los clientes crear reservas, incluyendo nombre, fechas de check-in y check-out, y habitación.
-- Cancelar reservas existentes.
-- Modificar las fechas de una reserva.
-- Listar todas las reservas, tanto activas como canceladas.
+#### Tarea 4: Crear Reservas para los Clientes
+
+Permitir a los clientes crear reservas, incluyendo nombre, fechas de check-in y check-out, y habitación.
+
+- **GIVEN** un cliente desea hacer una reserva en el hotel
+- **WHEN** el cliente envía los detalles de la reserva (nombre del cliente, fechas de check-in y check-out, habitación)
+- **THEN** el sistema registra la reserva y devuelve un mensaje de confirmación.
+
+#### Tarea 5: Cancelar Reservas
+Cancelar reservas existentes.
+- **GIVEN** un cliente desea cancelar una reserva existente
+- **WHEN** el cliente envía la solicitud de cancelación para una reserva específica
+- **THEN** el sistema cancela la reserva y devuelve un mensaje de confirmación.
+
+#### Tarea 6: Modificar Fechas de una Reserva Existente
+Modificar las fechas de una reserva.
+- **GIVEN** un cliente necesita cambiar las fechas de una reserva existente
+- **WHEN** el cliente envía las nuevas fechas para la reserva
+- **THEN** el sistema actualiza las fechas de la reserva y devuelve un mensaje de confirmación.
+
+#### Tarea 7: Listar Todas las Reservas
+Listar todas las reservas, tanto activas como canceladas.
+- **GIVEN** un usuario desea ver todas las reservas, incluyendo las activas y canceladas
+- **WHEN** el usuario solicita la lista de reservas
+- **THEN** el sistema devuelve una lista de todas las reservas con su estado.
 
 ### Búsqueda
 
-- Buscar habitaciones disponibles por fecha y tipo.
-- Buscar reservas por nombre del cliente.
+#### Tarea 8: Buscar Habitaciones Disponibles por Fecha y Tipo
+
+Buscar habitaciones disponibles por fecha y tipo.
+
+- **GIVEN** un cliente busca habitaciones disponibles para ciertas fechas y de un tipo específico
+- **WHEN** el cliente envía las fechas y el tipo de habitación deseado
+- **THEN** el sistema devuelve una lista de habitaciones que cumplen con los criterios.
+
+#### Tarea 9: Buscar Reservas por Nombre del Cliente
+
+Buscar reservas por nombre del cliente.
+
+- **GIVEN** un usuario desea buscar reservas utilizando el nombre del cliente
+- **WHEN** el usuario envía el nombre del cliente
+- **THEN** el sistema devuelve una lista de reservas asociadas a ese nombre.
 
 ## Requisitos No Funcionales
 
